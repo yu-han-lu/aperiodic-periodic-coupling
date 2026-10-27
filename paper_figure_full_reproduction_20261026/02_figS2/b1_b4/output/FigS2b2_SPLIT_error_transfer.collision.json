@@ -1,0 +1,23 @@
+{
+  "pdf": "02_figS2/b1_b4/output/FigS2b2_SPLIT_error_transfer.pdf",
+  "auditable": true,
+  "verdict": "PASS",
+  "page_count": 1,
+  "visible_text_box_count": 16,
+  "text_trace_count": 18,
+  "stroke_path_count": 19,
+  "filled_region_count": 13,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": []
+}

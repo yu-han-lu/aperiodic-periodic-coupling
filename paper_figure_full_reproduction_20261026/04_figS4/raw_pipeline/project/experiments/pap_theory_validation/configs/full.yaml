@@ -1,0 +1,52 @@
+mode: full
+seed: 20260801
+model_dir: Marmoset_Cortex_Model_code
+output_dir: experiments/pap_theory_validation/outputs
+peak_band_hz: [5.0, 20.0]
+slope_band_hz: [100.0, 1000.0]
+exp1:
+  n_trials: 4096
+  epsilons: [0.05, 0.1, 0.2, 0.4]
+  rhos: [-0.9, -0.6, -0.3, 0.0, 0.3, 0.6, 0.9]
+  bootstrap: 1000
+exp1_pairwise:
+  n_trials: 1024
+  workers: 8
+exp1_nonlinear:
+  epsilon: 0.2
+  n_trials: 64
+  dt_ms: 0.25
+  burn_s: 2.048
+  analysis_s: 4.096
+  input_sigma: 0.5
+exp2:
+  duration_s: 80.0
+  burn_s: 10.0
+  window_s: 4.0
+  dt_s: 0.00025
+  bootstrap: 1000
+exp3:
+  n_input_trials: 256
+  n_random_masks: 1500
+  bootstrap: 1000
+  derivative_directions: 100
+exp3_nonlinear:
+  n_input_trials: 64
+  n_masks: 120
+  dt_ms: 0.25
+  burn_s: 2.048
+  analysis_s: 4.096
+  input_sigma: 0.5
+finite_window:
+  short_analysis_s: 4.096
+  long_analysis_s: 32.768
+  long_segment_s: 4.096
+  smoothing_sigma_hz: 0.9765625
+pairwise_window_nonlinear:
+  exp1_n_trials: 64
+  exp3_n_trials: 64
+  exp3_n_masks: 40
+phase_seed_validation:
+  n_trials: 64
+  n_masks: 40
+  phase_seed_offsets: [220000, 520000, 520001, 520002, 520003, 520004]

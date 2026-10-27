@@ -1,0 +1,192 @@
+[
+  {
+    "file": "01_main_fig2_and_figS5/fig2a/output/Fig2a_network_structure.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2b/output/Fig2b.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2c/output/fig2c.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2d/output/Fig2d.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2e1_e2/output/Fig2e1_input.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2e1_e2/output/Fig2e2_output.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2f/output/Fig2f_chi.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2g/output/fig2g.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2h1_h2/output/Fig2h1_intact.pdf",
+    "returncode": 2,
+    "verdict": "NOT AUDITABLE"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2h1_h2/output/Fig2h2_deleted.pdf",
+    "returncode": 2,
+    "verdict": "NOT AUDITABLE"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2i/output/Fig2i.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/fig2j/output/Fig2j.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "01_main_fig2_and_figS5/figS5/output/FigS5.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "02_figS2/a/output/FigS2a.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "02_figS2/b1_b4/output/FigS2b1_FOOOF_error_transfer.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "02_figS2/b1_b4/output/FigS2b2_SPLIT_error_transfer.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "02_figS2/b1_b4/output/FigS2b3_contribution_FOOOF.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "02_figS2/b1_b4/output/FigS2b4_contribution_SPLIT.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "02_figS2/c/output/FigS2c.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "02_figS2/d/output/FigS2d.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "02_figS2/e/output/FigS2e.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "02_figS2/f/output/FigS2f.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "03_figS3/a/output/FigS3a.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "03_figS3/b/output/FigS3b_exponent.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "03_figS3/c/output/FigS3c.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "03_figS3/d1_d3/output/FigS3d1_d3.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "03_figS3/e1_e2/output/FigS3e1.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "03_figS3/e1_e2/output/FigS3e2.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "03_figS3/f1/output/FigS3f1_exponent.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "03_figS3/f2/output/FigS3f2_exponent.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "04_figS4/a/output/FigS4a.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "04_figS4/b/output/FigS4b_exponent.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "04_figS4/c/output/FigS4c.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "04_figS4/d1_d3/output/FigS4d1_d3.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "04_figS4/e1_e2/output/FigS4e1.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "04_figS4/e1_e2/output/FigS4e2.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "04_figS4/f1/output/FigS4f1_exponent.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  },
+  {
+    "file": "04_figS4/f2/output/FigS4f2_exponent.pdf",
+    "returncode": 0,
+    "verdict": "PASS"
+  }
+]

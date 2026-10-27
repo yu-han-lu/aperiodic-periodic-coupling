@@ -1,0 +1,22 @@
+mode: smoke
+seed: 20260801
+model_dir: Marmoset_Cortex_Model_code
+output_dir: experiments/pap_theory_validation/outputs
+peak_band_hz: [5.0, 20.0]
+slope_band_hz: [100.0, 1000.0]
+exp1:
+  n_trials: 128
+  epsilons: [0.1, 0.3]
+  rhos: [-0.6, 0.0, 0.6]
+  bootstrap: 100
+exp2:
+  duration_s: 24.0
+  burn_s: 4.0
+  window_s: 2.0
+  dt_s: 0.0005
+  bootstrap: 100
+exp3:
+  n_input_trials: 96
+  n_random_masks: 30
+  bootstrap: 100
+  derivative_directions: 12

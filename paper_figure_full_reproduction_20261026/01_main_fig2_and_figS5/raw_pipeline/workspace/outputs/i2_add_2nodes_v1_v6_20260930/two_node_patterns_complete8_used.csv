@@ -1,0 +1,9 @@
+row_id,deleted_node,deleted_nodes,n_deleted,source,combo_id,combo_key,direct,selection_source,fixedpoint_residual_screen,effective_max_real_eigenvalue_per_ms_screen,active_E_count_screen,active_I_count_screen,input_active_screen,output_active_screen,fixedpoint_output_rate_screen,source_network_position,nodes,additive_screen_delta_r
+1000,,A11|A23a,2,balanced deletion-count condition,A11|A23a,A11|A23a,True,new exact-Heun rerun,1.7053025658242404e-13,-0.000899949340771,52,52,True,True,9.886650320333748,1,A11|A23a,
+1001,,A24d|MIP,2,balanced deletion-count condition,A24d|MIP,A24d|MIP,True,new exact-Heun rerun,4.263256414560601e-14,-0.0005109584092019,53,53,True,True,9.806612875585223,2,A24d|MIP,
+1002,,A8aV|AuRT,2,balanced deletion-count condition,A8aV|AuRT,A8aV|AuRT,True,new exact-Heun rerun,4.263256414560601e-14,-0.0010327075856663,51,51,True,True,9.85412541553236,3,A8aV|AuRT,
+1003,,A45|A8aV,2,balanced deletion-count condition,A45|A8aV,A45|A8aV,True,new exact-Heun rerun,3.5527136788005016e-14,-0.0010336799627297,50,50,True,True,9.838696055654385,4,A45|A8aV,
+1018,,A10|A32,2,balanced deletion-count condition,A10|A32,A10|A32,False,new exact-Heun rerun,4.263256414560601e-14,-0.0010132033827133,48,48,True,True,9.90701464910763,19,A10|A32,
+1019,,A32V|A8aD,2,balanced deletion-count condition,A32V|A8aD,A32V|A8aD,False,new exact-Heun rerun,4.263256414560601e-14,-0.0009998741730665,52,52,True,True,9.93317999063871,20,A32V|A8aD,
+1020,,A11|PF,2,balanced deletion-count condition,A11|PF,A11|PF,False,new exact-Heun rerun,4.618527782440651e-14,-0.0005909261210108,53,53,True,True,9.91228023943761,21,A11|PF,
+1023,,A32|A9,2,balanced deletion-count condition,A32|A9,A32|A9,False,new exact-Heun rerun,1.0658141036401505e-13,-0.0009570967766625,52,52,True,True,9.932951072786889,24,A32|A9,

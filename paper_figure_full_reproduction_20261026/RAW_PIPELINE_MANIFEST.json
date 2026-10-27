@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "purpose": "Map each final paper panel to its registered raw simulation or estimator-data generator without changing the analysis protocol.",
+  "workflows": {
+    "source_data_to_figure": "run_all.py",
+    "raw_simulation_to_data": "run_raw.py"
+  },
+  "groups": {
+    "main": {
+      "panels": {
+        "Fig2b_c": "complete 55-area threshold-linear network; explicit nonlinear Heun; stable-node and zero-input-correlation ensembles",
+        "Fig2f_g": "complete 55-area threshold-linear network; explicit nonlinear Heun; stable-complex ensemble; parameter first-order theory generated separately from the transfer-derived feature map",
+        "Fig2i": "version-6 held-out nonlinear Heun plus two-node extension; network-specific second-order input-parameter map; condition-matched three-realization nonlinear Heun calibration; single-realization Ce",
+        "Fig2j": "one-to-five-node deletion states; network-specific first-order maps; two held-out nonlinear Heun realizations analysed separately before averaging correlations; single-realization Ce",
+        "FigS5": "complete 55-area threshold-linear 9-by-9 time-domain generator; registered forward-Euler recurrence"
+      }
+    },
+    "s2": {
+      "panels": "OU plus filtered oscillation, Welch PSD, FOOOF 1.1.1 and IRASA-SPLIT, second-order response surface plus calibration realization residuals; panels d-f use matched equal input-setting weights"
+    },
+    "s3": {
+      "panels": "linear damped oscillator and registered finite-window observation model"
+    },
+    "s4": {
+      "panels": "linearized finite-window Hopf observation model for population validations and explicit-Heun cubic Hopf integration for direct nonlinear trajectories"
+    }
+  },
+  "invariants": [
+    "No launcher changes the model or nonlinearity.",
+    "No launcher changes input distributions or frozen parameter designs.",
+    "No launcher changes seeds, time step, burn-in, window length or Welch settings.",
+    "No launcher changes calibration/held-out allocation, validity masks, feature extraction, Taylor order or statistical aggregation.",
+    "A state-equation Jacobian, an input-parameter Taylor expansion and a complete trial-wise feature map are kept as distinct calculations."
+  ]
+}

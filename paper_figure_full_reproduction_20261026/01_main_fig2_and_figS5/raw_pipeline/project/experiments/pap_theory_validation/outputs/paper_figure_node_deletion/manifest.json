@@ -1,0 +1,108 @@
+{
+  "panel_A": {
+    "peak_hz": 8.524448720167731,
+    "slope": -6.420247330920548
+  },
+  "panel_B": {
+    "identity_R2": 0.9945222741926534,
+    "ols_R2": 0.9952604326666276,
+    "p": 0.0
+  },
+  "panel_C": {
+    "condition_pos": 1,
+    "condition": "rank_one_eps0.2_rho0",
+    "analysis_s": 32.768,
+    "n_significant": 81,
+    "min_r": 0.9766181111335754,
+    "max_r": 0.9955157041549683
+  },
+  "panel_D": {
+    "complex_onset_s_EI": 2.0815631208601286,
+    "hopf_s_EE": 4.3393756605801155
+  },
+  "panel_E": {
+    "regimes": [
+      {
+        "regime": "Real modes",
+        "s_EI": 1.0,
+        "s_EE": 1.0,
+        "peak_hz": 0.732421875
+      },
+      {
+        "regime": "Stable complex",
+        "s_EI": 6.693999317940512,
+        "s_EE": 1.0,
+        "peak_hz": 0.732421875
+      },
+      {
+        "regime": "Beyond Hopf",
+        "s_EI": 6.693999317940512,
+        "s_EE": 4.369375660580116,
+        "peak_hz": 22.705078125
+      }
+    ]
+  },
+  "panel_F": {
+    "s_EI": 6.693999317940512,
+    "s_EE": 4.289375660580116,
+    "peak_hz": 25.884645985650607,
+    "slope": -2.579936984209239
+  },
+  "panel_G": {
+    "n_conditions": 1000,
+    "identity_R2": 0.8196716752467159,
+    "ols_R2": 0.8646442503413756,
+    "pearson_r": 0.9298624900174087,
+    "slope": 1.0558948549062144,
+    "intercept": -0.05121275710177098,
+    "p": 0.0,
+    "analysis_s": 131.072,
+    "trials_per_condition": 256,
+    "calibration_phases": 3,
+    "heldout_phases": 5,
+    "max_residual_corrected_r": 0.6,
+    "method": "S32 residual-corrected long-window validation"
+  },
+  "panels_H_I": {
+    "deleted_nodes": [
+      "A46D",
+      "A47L",
+      "A4c",
+      "A6DC",
+      "A6DR",
+      "AuA1",
+      "MIP",
+      "OPt",
+      "PE",
+      "PG",
+      "V1",
+      "V4T"
+    ],
+    "input_area": "A6Va",
+    "output_area": "V2"
+  },
+  "runtime_s": 112.07590413093567,
+  "seed": 20260807,
+  "exp3_analysis_s": 65.536,
+  "exp3_trials": 512,
+  "calibration_phases": 3,
+  "heldout_phases": 5,
+  "source_directory": "/PORTABLE_HOME/Documents/New project/experiments/pap_theory_validation/outputs/paper_figure_node_deletion",
+  "exp3_corrected_results": {
+    "baseline": {
+      "theory_r": -0.39785068461368106,
+      "simulation_r": -0.3971196380822738,
+      "simulation_sd": 0.035625641641022825
+    },
+    "node_deleted": {
+      "theory_r": -0.29169659900059475,
+      "simulation_r": -0.29617929305870117,
+      "simulation_sd": 0.027385517697179736
+    },
+    "delta": {
+      "theory_r": 0.10615408561308631,
+      "simulation_r": 0.10094034502357263,
+      "simulation_sd": 0.018085941069108987
+    }
+  }
+}

@@ -1,0 +1,6 @@
+from pathlib import Path
+import sys
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parents[1]))
+from common import plot_main
+plot_main("fig2c", HERE)

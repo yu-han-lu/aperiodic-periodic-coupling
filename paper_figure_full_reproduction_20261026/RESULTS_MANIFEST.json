@@ -1,0 +1,59 @@
+{
+  "archive_date": "2026-10-26",
+  "scope": "Main Figure 2 and Supplementary Figures 2-5",
+  "default_mode": "deterministic redraw from bundled final panel-level source data",
+  "raw_mode": "opt-in registered raw simulation/estimation to analysis data, dispatched by run_raw.py",
+  "raw_pipeline_checks": {
+    "main_55_area_model_and_entry_points": "PASS",
+    "FigS2_registered_inputs_and_entry_points": "PASS",
+    "FigS3_entry_point": "PASS",
+    "FigS4_entry_points": "PASS"
+  },
+  "latest_locked_panels": {
+    "Fig2c": {
+      "n": 100,
+      "theory_median": -0.0173811748046123,
+      "simulation_median": -0.05872016350400175,
+      "display": "overlaid histograms plus horizontal boxplots",
+      "xlim": [-0.2, 0.2]
+    },
+    "Fig2f": {
+      "n": 1000,
+      "feature_convention": "corr(P, chi), chi=-A",
+      "pearson_r": 0.964418630254732,
+      "ols_slope": 0.9689761340965665,
+      "r_squared": 0.9301032943824133,
+      "rerun_for_sign_conversion": false
+    },
+    "Fig2g": {
+      "n": 1000,
+      "feature_convention": "corr(P, chi)",
+      "theory_median": -0.26204849638329053,
+      "simulation_median": -0.26985660642795317,
+      "display": "overlaid histograms plus horizontal boxplots",
+      "xlim": [-0.6, 0.6]
+    },
+    "FigS2d": {
+      "n_groups": 80,
+      "weighting": "equal probability for each evaluable input setting in both prediction and held-out evaluation",
+      "pearson_r": 0.8013485331604008,
+      "ols_slope": 0.6926686334715287,
+      "r_squared": 0.642159471598326
+    },
+    "FigS2f": {
+      "n_high_gamma_groups": 20,
+      "mean_fooof": 0.2100357271544388,
+      "mean_fooof_observed_minus_predicted": -0.016019431002748358,
+      "mean_split": -0.009542351581941751
+    }
+  },
+  "qa": {
+    "panel_groups_executed": 31,
+    "svg_outputs": 38,
+    "pdf_outputs": 38,
+    "static_preflight_failures": 0,
+    "collision_audit_pass": 36,
+    "collision_audit_not_auditable": 2,
+    "not_auditable_reason": "Fig. 2h1 and 2h2 are deliberately text-free raster heatmaps inside vector containers; the audit reported no collision findings."
+  }
+}

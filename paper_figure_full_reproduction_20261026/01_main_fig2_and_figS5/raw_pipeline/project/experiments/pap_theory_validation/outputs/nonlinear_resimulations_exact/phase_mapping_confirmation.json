@@ -1,0 +1,14 @@
+{
+  "status": "confirmed_by_user",
+  "rule": "Keep each original statistical-realization seed root and deterministically derive the same 3 calibration and 5 held-out time-domain Fourier phases from that root.",
+  "frozen": {
+    "calibration_phases": 3,
+    "heldout_phases": 5,
+    "all_other_parameters": "unchanged from registered source figures"
+  },
+  "applies_to": [
+    "hopf_B",
+    "hopf_F",
+    "wholebrain_H"
+  ]
+}

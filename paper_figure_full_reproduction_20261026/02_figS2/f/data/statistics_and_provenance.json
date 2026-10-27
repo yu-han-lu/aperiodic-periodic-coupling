@@ -1,0 +1,123 @@
+{
+  "change_requested": "Manuscript Comment 80: match prediction and held-out correlation using equal input-setting weights.",
+  "what_changed": "For each estimator and group, the theory and held-out mixtures use the same 50,000 uniformly sampled evaluable-setting indices. Within a selected setting, one valid held-out realization is sampled uniformly for the empirical mixture; the theory adds one complete calibration residual pair to the second-order conditional mean.",
+  "what_did_not_change": [
+    "four input-generating parameter distributions",
+    "64 calibration settings and eight realizations per setting",
+    "128 held-out settings and four realizations per setting",
+    "30-s, 1,000-Hz OU-plus-bandpass signal generation and Welch PSD",
+    "FOOOF 1.1.1 knee-mode fitting and IRASA-SPLIT fitting",
+    "second-order calibration response surface",
+    "pooled complete two-coordinate calibration residual pairs",
+    "estimator-specific validity definition",
+    "20 groups in each of four frequency bands",
+    "direct Spearman correction rho_observed minus rho_predicted in panel f"
+  ],
+  "validity_support": "Estimator-specific settings with at least one valid held-out realization are retained; theory is evaluated on that identical setting set. FOOOF and SPLIT are not forced onto a cross-estimator common mask.",
+  "resampling": {
+    "n": 50000,
+    "setting_probability": "uniform across retained settings",
+    "within_setting_realization_probability": "uniform across valid held-out realizations",
+    "calibration_residual_probability": "uniform across pooled complete residual pairs",
+    "same_setting_draw_used_for_prediction_and_heldout": true,
+    "seed_rule": "BASE_SEED + repeat*100000 + band_index*10000 + 71001 (FOOOF) or 72001 (SPLIT)"
+  },
+  "frozen_replay_check": "All 320 original group-level empirical/predicted values matched the frozen CSV within 1e-12 before reweighting.",
+  "source_csv_sha256": "a9c3fd85a6f42f49711989ca34b163cef7c9df177315197e40e612780ad9caab",
+  "package": "FOOOF 1.1.1 from existing local package cache",
+  "panel_d": {
+    "n_groups": 80,
+    "pearson_r": 0.8013485331604008,
+    "pearson_p": 4.381222918636022e-19,
+    "ols_slope": 0.6926686334715287,
+    "ols_intercept": 0.013754030779262575,
+    "R2": 0.642159471598326
+  },
+  "panel_e": [
+    {
+      "band": "alpha",
+      "center": 10.0,
+      "fooof_pred": -0.04225213005043107,
+      "fooof_emp": -0.06220943223115414,
+      "fooof_lo": -0.14035355450128506,
+      "fooof_hi": 0.01796794345685706,
+      "split_pred": 0.0073208588176372795,
+      "split_emp": 0.01725001092322248,
+      "split_lo": -0.15202021846999286,
+      "split_hi": 0.1374383265311225
+    },
+    {
+      "band": "beta",
+      "center": 21.5,
+      "fooof_pred": -0.14118288398126858,
+      "fooof_emp": -0.09336677837664167,
+      "fooof_lo": -0.20301686673348027,
+      "fooof_hi": -0.004646471041318132,
+      "split_pred": -0.05805214336803136,
+      "split_emp": -0.0564997212390446,
+      "split_lo": -0.14640650473535066,
+      "split_hi": 0.02662487325280158
+    },
+    {
+      "band": "low gamma",
+      "center": 45.0,
+      "fooof_pred": 0.029586284696023413,
+      "fooof_emp": 0.05057173495006252,
+      "fooof_lo": -0.02146534188103156,
+      "fooof_hi": 0.13421685938343128,
+      "split_pred": -0.011832762901664615,
+      "split_emp": -0.00474339083899833,
+      "split_lo": -0.08598874500869026,
+      "split_hi": 0.0639932363341233
+    },
+    {
+      "band": "high gamma",
+      "center": 105.0,
+      "fooof_pred": 0.22605515815718719,
+      "fooof_emp": 0.2100357271544388,
+      "fooof_lo": 0.10173373019059011,
+      "fooof_hi": 0.3054135315407657,
+      "split_pred": -0.012753966130335618,
+      "split_emp": -0.009542351581941751,
+      "split_lo": -0.02320814768885465,
+      "split_hi": 0.0070986929840220064
+    }
+  ],
+  "panel_f": {
+    "FOOOF": {
+      "n_groups": 20,
+      "mean": 0.2100357271544388,
+      "median": 0.22262403224667315,
+      "p_against_zero": 1.9073486328125e-06
+    },
+    "FOOOF observed minus predicted": {
+      "n_groups": 20,
+      "mean": -0.016019431002748358,
+      "median": -0.02432373441712085,
+      "p_against_zero": 0.38837623596191406
+    },
+    "SPLIT": {
+      "n_groups": 20,
+      "mean": -0.009542351581941751,
+      "median": -0.00995909490398165,
+      "p_against_zero": 0.000850677490234375
+    },
+    "corrected_vs_SPLIT_p": 0.6742229461669922
+  },
+  "validity_summary": {
+    "fooof": {
+      "retained_settings_min": 122,
+      "retained_settings_median": 128.0,
+      "retained_settings_max": 128,
+      "zero_valid_settings_total": 60,
+      "valid_pairs_total": 34077
+    },
+    "split": {
+      "retained_settings_min": 63,
+      "retained_settings_median": 93.0,
+      "retained_settings_max": 128,
+      "zero_valid_settings_total": 2437,
+      "valid_pairs_total": 15734
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "model": {
+    "key": "hopf",
+    "title": "Hopf normal form",
+    "omega_hz": 25.0,
+    "exp1_parameter": -40.0,
+    "exp2_parameter": -2.5,
+    "parameter_name": "mu_hz"
+  },
+  "equation_input_interpretation": "additive forcing u(t) in dx/dt",
+  "dt_s_representative_ode": 0.00025,
+  "burn_s": 2.048,
+  "exp1": {
+    "conditions": 1000,
+    "trials_per_condition": 64,
+    "window_s": 32.768,
+    "metrics": {
+      "n": 1000,
+      "identity_R2": 0.9998638485103852,
+      "ols_R2": 0.9998724044838473,
+      "pearson_r": 0.9999362002067168,
+      "slope": 1.0009217066415295,
+      "intercept": 0.0015747522029192825,
+      "p": 0.0
+    }
+  },
+  "exp2": {
+    "conditions": 1000,
+    "trials_per_condition": 256,
+    "window_s": 131.072,
+    "selection": "residual-corrected theory r < 0.6",
+    "metrics": {
+      "n": 1000,
+      "identity_R2": 0.8566408970267014,
+      "ols_R2": 0.8877169124349518,
+      "pearson_r": 0.9421873022042654,
+      "slope": 0.8881038793468325,
+      "intercept": 0.009367793770238858,
+      "p": 0.0
+    }
+  },
+  "realization_layer": {
+    "calibration_phases": 3,
+    "heldout_phases": 5,
+    "welch_segment_s": 4.096,
+    "method": "Monte Carlo finite-window Welch observation model around the exact 2D resolvent PSD"
+  },
+  "panel_A": {
+    "peak_hz": 9.598850228405853,
+    "slope": -2.386449873694767
+  },
+  "panel_D": {
+    "complex_boundary": 0.0,
+    "stability_boundary": 0.0
+  },
+  "panel_F": {
+    "peak_hz": 24.863401469924973,
+    "slope": -2.4308951931910157
+  },
+  "panel_G": {
+    "condition": 67,
+    "theory_r": 0.2858067645254193,
+    "simulation_r": 0.2509277169915358,
+    "pearson_r": 0.9421873022042654,
+    "p": 0.0,
+    "display_pearson_r": "0.942",
+    "display_p": "0.00e+00"
+  }
+}
